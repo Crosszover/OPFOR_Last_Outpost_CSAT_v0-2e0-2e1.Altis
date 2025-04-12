@@ -1,0 +1,30 @@
+// description.ext
+
+// Parámetros de misión y otras configuraciones
+author = "Crozier";
+onLoadName = "OPFOR Last Outpost CSAT v0.0.1";
+onLoadMission = "Defend your island from a enemy invasion force";
+loadScreen = "imagen.jpg";  // Ruta a una imagen de carga opcional
+
+// Configuraciones adicionales
+disabledAI = 1;
+saving = 0;
+
+class Params
+{
+    class MissionStartTime
+    {
+        title = "Mission Start Time";
+        values[] = {6,12,18,0,-1};
+        texts[] = {"Dawn (06:00)", "Noon (12:00)", "Evening (18:00)", "Night (00:00)", "Random"};
+        default = -1;
+    };
+    
+    class TimeAcceleration
+    {
+        title = "Time Acceleration";
+        values[] = {1,2,5,10};
+        texts[] = {"Normal (x1)", "Fast (x2)", "Very Fast (x5)", "Extreme (x10)"};
+        default = 1;
+    };
+};
